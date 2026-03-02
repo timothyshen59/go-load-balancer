@@ -15,9 +15,23 @@ Production-ready Prometheus + Grafana metrics export: request latency, RPS, erro
 
 ### Simple Configuration
 JSON/YAML configs for backends, weights, health check intervals. Zero boilerplate—single docker compose up for full stack.
+
 ## Configuration
 
+###YAML
+```yaml
+port: ":3030"
+health_check_interval: 1
+backends:
+  - url: "http://backend1:8081"
+    weight: 3
+    health_path: "/health"
+  - url: "http://backend2:8082"
+    weight: 2
+    health_path: "/health"
+```
 
+##Getting Started 
 
 
 
