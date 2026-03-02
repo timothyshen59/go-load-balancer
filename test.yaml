@@ -1,0 +1,10 @@
+port: ":3030"
+health_check_interval: 1
+backends:
+  - url: "http://backend1:8081"
+    weight: 3
+    health_path: "/health"
+  - url: "http://backend2:8082"
+    weight: 2
+    health_path: "/health"
+

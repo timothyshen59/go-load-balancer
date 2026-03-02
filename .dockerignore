@@ -1,0 +1,8 @@
+.git
+.gitignore
+README.md
+.dockerignore
+node_modules
+*.log
+grafana-storage
+prometheus
