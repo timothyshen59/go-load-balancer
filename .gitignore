@@ -14,5 +14,5 @@ prometheus/
 !.env.example
 
 #Binaries
-lb
-setup
+!lb/
+!setup/
