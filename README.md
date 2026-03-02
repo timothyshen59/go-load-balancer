@@ -18,7 +18,7 @@ JSON/YAML configs for backends, weights, health check intervals. Zero boilerplat
 
 ## Configuration
 
-###YAML
+### YAML
 ```yaml
 port: ":3030"
 health_check_interval: 1
@@ -30,8 +30,15 @@ backends:
     weight: 2
     health_path: "/health"
 ```
+## Getting Started 
+Clone the repo and spin up the load balancer + backends with Docker 
+```bash
+git clone https://github.com/timothyshen59/go-load-balancer.git
+cd 
+docker compose up -d
+```
 
-##Getting Started 
+
 
 
 
